@@ -102,7 +102,7 @@ class Main {
         }
     }
 
-    private static String calcRoman(String[] vyrazhenie, char operator, String[] romanNumbers) throws IOException {
+    static String calcRoman(String[] vyrazhenie, char operator, String[] romanNumbers) throws IOException {
         if (romanToNumber(vyrazhenie[0]) != -1) {
             if (romanToNumber(vyrazhenie[2]) != -1) {
                 int a = romanToNumber(vyrazhenie[0]);
