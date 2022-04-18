@@ -76,7 +76,7 @@ class Main {
 
     }
 
-    private static int romanToNumber(String roman) {
+    static int romanToNumber(String roman) {
         if (roman.equals("I")) {
             return 1;
         } else if (roman.equals("II")) {
