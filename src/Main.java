@@ -48,11 +48,11 @@ class Main {
                 break;
 
         }
-        if (vyrazhenie[0].matches("[1-9]+[\\.]?[1-9]*") ^ vyrazhenie[2].matches("[1-9]+[\\.]?[1-9]*")) {
+        if (vyrazhenie[0].matches("[1-10]+[\\.]?[1-10]*") ^ vyrazhenie[2].matches("[1-10]+[\\.]?[1-10]*")) {
             throw new IOException();
         }
 
-        isArabic = vyrazhenie[0].matches("[1-9]+[\\.]?[1-9]*") && vyrazhenie[2].matches("[1-9]+[\\.]?[1-9]*");
+        isArabic = vyrazhenie[0].matches("[1-10]+[\\.]?[1-10]*") && vyrazhenie[2].matches("[1-10]+[\\.]?[1-10]*");
 
         if (isArabic) {
             if (Integer.parseInt(vyrazhenie[0]) > 10 || Integer.parseInt(vyrazhenie[2]) > 10) {
